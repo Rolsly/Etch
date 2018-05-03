@@ -1,28 +1,39 @@
-let grid = prompt("How big do you want your grid? (Between 1-100)")
+let grid = prompt("How big do you want your grid? (Between 1-100)"); //Obtains a variable between 1-100
 
-if(grid <= 100 && grid > 0){
-  for (j = 0; j < Number(grid); j++){
-    const container = document.querySelector('#container');
-    const line = document.createElement('div');
-    line.classList.add(j)
-    line.style.display ="block";
-    container.appendChild(line);
+if(grid <= 100 && grid > 0){ //If prompt answer is between 1-100 begins a loop
+  for (j = 0; j < Number(grid); j++){ //Creates rows equal to grid
+    const container = document.querySelector('#container'); //Selects the div #container and creates a working variable
+    const line = document.createElement('div'); //Creates a new div in #container, and creates a working variable
+    line.classList.add("row"); //Each new row is given the class "row"
+    line.style.display ="block"; //Stacks them on top of one another
+    line.style.height =  (500 / grid).toString() + "px"; //Sets the height of each row, overall grid height is stable, size of row depends on number of rows
+    container.appendChild(line); //Saves changes to html
 
-    for (i = 0; i < Number(grid); i++){
+    for (i = 0; i < Number(grid); i++){ //Creates cells equal to grid
       document.querySelector('line');
       const square = document.createElement('span');
-      square.classList.add(i)
-      square.style.padding = "5px 5px 5px 5px";
-      square.style.display ="inline-block";
-      square.style.border = "solid gray 1px";
+      square.classList.add("cell")
+      square.style.width =  (500 / grid).toString() + "px";
+      square.style.height =  (500 / grid).toString() + "px";
+      square.style.backgroundColor = "white" //Starting colour is white
+      square.style.display ="inline-block"; //Places them in a line
       line.appendChild(square);
     }
   }
 } else {
-        location.reload();
+        location.reload(); //If grid !== 1-100 page is reset
     }
 
 const btn = document.querySelector('#btn');
-btn.addEventListener("click", () => {
-  location.reload();
+btn.addEventListener("click", () => { //Waits for button to be clicked
+  location.reload(); //Resets the page
 })
+
+const change = document.getElementsByClassName('cell');
+  for(k = 0; k<change.length; k++){ //Attaches a condition to every cell
+    change[k].onmouseover = function(){ //When mouse hovers over cell
+      this.style.backgroundColor = "gray" //Colour changes to greydocument.getElementsByClassName("cell").style.transition = "all 0.01s";
+    }
+  }
+
+  document.getElementsByClassName("cell").style.transition = "all 0.01s";

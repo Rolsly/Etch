@@ -1,30 +1,59 @@
+html{
+  background-color: #a4b1fb;
+}
+
 span:hover {
   background-color: gray;
 }
 
 #content {
   position: absolute;
+  left: 50px;
   margin: 0 auto;
   min-width: 1408px;
 }
 
 #container{
   position: absolute;
-  top: 60px;
+  top: 100px;
+  left: 400px;
 }
 
 #btn {
-  padding: 10px 15px 10px 15px;
-  border: solid black 1px;
-  background-color: red;
-  font-size: 16px;
+  padding: 40px 40px 40px 40px;
+  border: solid black 3px;
+  box-shadow: 2px 2px gray;
+  background: linear-gradient(#9f0022, #7e0017);
+  background-color: #7e0017;
+  margin: 0 auto;
+  font-size: 25px;
   color: white;
+  font-family: 'Titan One', cursive;
   position: relative;
-  top: 10px;
-  left: 30%;
+  top: 650px;
+  left: 620px;
+  border-radius: 100%;
 }
 
 #btn:hover{
-  box-shadow: 1px 1px gray;
+  box-shadow: 4px 4px gray;
   cursor: pointer;
+}
+
+#back {
+  height: 800px;
+  width: 700px;
+  background-color: #3c566b;
+  border: solid black 2px;
+  border-radius: 30%;
+  position: absolute;
+  left: 300px;
+}
+
+h1 {
+  position: relative;
+  left: 510px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 50px;
+  color: black;
 }
