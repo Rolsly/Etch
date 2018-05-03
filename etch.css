@@ -2,10 +2,6 @@ html{
   background-color: #a4b1fb;
 }
 
-span:hover {
-  background-color: gray;
-}
-
 #content {
   position: absolute;
   left: 50px;
@@ -15,12 +11,12 @@ span:hover {
 
 #container{
   position: absolute;
-  top: 100px;
-  left: 400px;
+  top: 120px;
+  left: 435px;
 }
 
 #btn {
-  padding: 40px 40px 40px 40px;
+  padding: 30px 30px 30px 30px;
   border: solid black 3px;
   box-shadow: 2px 2px gray;
   background: linear-gradient(#9f0022, #7e0017);
@@ -30,8 +26,8 @@ span:hover {
   color: white;
   font-family: 'Titan One', cursive;
   position: relative;
-  top: 650px;
-  left: 620px;
+  top: 20px;
+  left: 950px;
   border-radius: 100%;
 }
 
@@ -41,19 +37,21 @@ span:hover {
 }
 
 #back {
-  height: 800px;
-  width: 700px;
+  height: 1000px;
+  width: 1000px;
   background-color: #3c566b;
   border: solid black 2px;
   border-radius: 30%;
   position: absolute;
+  top: 0px;
   left: 300px;
 }
 
 h1 {
-  position: relative;
-  left: 510px;
+  position: absolute;
+  top: 20px;
+  left: 550px;
   font-family: 'Luckiest Guy', cursive;
   font-size: 50px;
-  color: black;
+  color: #b8c1f2;
 }

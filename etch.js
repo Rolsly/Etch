@@ -6,15 +6,15 @@ if(grid <= 100 && grid > 0){ //If prompt answer is between 1-100 begins a loop
     const line = document.createElement('div'); //Creates a new div in #container, and creates a working variable
     line.classList.add("row"); //Each new row is given the class "row"
     line.style.display ="block"; //Stacks them on top of one another
-    line.style.height =  (500 / grid).toString() + "px"; //Sets the height of each row, overall grid height is stable, size of row depends on number of rows
+    line.style.height =  (750 / grid).toString() + "px"; //Sets the height of each row, overall grid height is stable, size of row depends on number of rows
     container.appendChild(line); //Saves changes to html
 
     for (i = 0; i < Number(grid); i++){ //Creates cells equal to grid
       document.querySelector('line');
       const square = document.createElement('span');
       square.classList.add("cell")
-      square.style.width =  (500 / grid).toString() + "px";
-      square.style.height =  (500 / grid).toString() + "px";
+      square.style.width =  (750 / grid).toString() + "px";
+      square.style.height =  (750 / grid).toString() + "px";
       square.style.backgroundColor = "white" //Starting colour is white
       square.style.display ="inline-block"; //Places them in a line
       line.appendChild(square);
